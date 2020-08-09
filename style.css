@@ -1,0 +1,932 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*header*/
+}
+
+@font-face {
+	font-family: 'roberto';
+	src: url(assets/Roboto-Light.ttf);
+	font-style: normal;
+}
+
+li,
+a,
+button {
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+.headline-email {
+	display:block;
+	font-size:26px;
+
+}
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	font-family: 'roberto';
+}
+
+.logo-text {
+	color: rgb(94, 6, 175);
+}
+
+.lang {
+	margin-top: 15px;
+	margin-left: 14px;
+}
+
+.logo-lang h2{
+	padding-right: 90px;
+	font-size: 27px;
+	font-family: Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+	list-style: none;
+	margin-right: 58px;
+}
+
+.menu li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.logo-lang {
+	margin-right: auto;
+	padding-top: 30px
+}
+
+.logo-lang a {
+	color: rgb(78, 74, 74);
+	padding-top: 20px;
+}
+
+.menu li a {
+	transition: all 0.3s ease 0s;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.logIn {
+	margin-right: 25px;
+	margin-left: 10px;
+	color: black;
+}
+
+
+
+ul.lang-chooser {
+	margin-right: 30px;
+	padding: 6px;
+	list-style: none;
+}
+
+ul.lang-chooser li {
+	display: inline;
+	font-size: 12px;
+}
+
+ul.lang-chooser li+li:before {
+	padding: 6px;
+	color: black;
+	content: "/\00a0";
+}
+
+ul.lang-chooser li a {
+	color: #515457;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+ul.lang-chooser li a:hover {
+	color: rgb(14, 13, 13);
+	text-decoration: underline;
+}
+
+.menu li a:hover {
+	color: rgb(43, 28, 28);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: rgb(52, 52, 133);
+}
+
+.logIn:hover {
+	color: blue;
+}
+
+
+/*header*/
+
+
+/*section*/
+
+.background {
+	background-image: url(assets/section.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 56rem;
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+}
+
+.headline {
+	font-family: 'roberto';
+	color: rgb(53, 49, 49);
+	font-size: 3.7rem;
+
+}
+
+
+.red {
+	color: red;
+}
+
+.social-media-icons {
+	display: grid;
+	justify-content: flex-end;
+	margin-right: 35px;
+	margin-top: 140px;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	margin: 70px;
+	position: relative;
+	left: 10px;
+}
+
+.create {
+	margin-right: 20px;
+	width: 250px;
+	height: 55px;
+	border-radius: 30px;
+	color: rgb(240,255,240);
+	text-align: center;
+	background-color: rgb(88, 45, 128);
+	box-shadow: -5px 10px 15px #8e7194;
+	cursor: pointer;
+	border: none;
+	font-family: 'roberto';
+	margin-top:-3px;
+	outline: none;
+}
+
+.create:hover {
+	background-color: rgb(52, 52, 133);
+}
+
+.apple-store {
+	padding: 0 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	background-color: rgb(88, 45, 128);
+	cursor: pointer;
+	border: none;
+}
+
+.play-store {
+	padding: 0 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	background-color: rgb(88, 45, 128);
+	cursor: pointer;
+	border: none;
+}
+
+.fa-apple,
+.fa-play {
+	margin-top: 17px;
+	color: white;
+}
+.fa-google-icons {
+	color: rgb(88, 82, 82);
+	font-size: 22px;
+}
+.fa-google-icons:hover{
+	color: rgb(52, 52, 133);
+}
+.apple-store:hover {
+	background-color: rgb(52, 52, 133);
+}
+
+.play-store:hover {
+	background-color: rgb(52, 52, 133);
+}
+
+.wrapper {
+
+	max-width: 1800px;
+	margin:0 auto;
+}
+
+
+/* midline */
+
+
+/*article*/
+
+main {
+	height: 690px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	padding-top: 40px;
+}
+
+.one,
+.four {
+	border-right: 1px solid black;
+}
+
+.onw,
+.two,
+.thre {
+	height: 125px;
+}
+
+.four,
+.five,
+.six {
+	height: 80px;
+}
+
+.seven,
+.eight,
+.nine {
+	margin-bottom: 180px;
+	height: 210px;
+}
+
+.eleven,
+.twelve,
+.ten {
+	position: relative;
+	bottom: 180px;
+	height: 142px;
+}
+
+.ten {
+	grid-column: span 2;
+}
+
+.thirteen {
+	position: relative;
+	bottom: 180px;
+	height: 142px;
+	grid-column: span 2;
+}
+
+.fourteen {
+	position: relative;
+	bottom: 180px;
+	height: 142px;
+}
+
+.twelve,
+.thirteen {
+	height: 10px;
+}
+
+.five,
+.eight,
+.ten {
+	border-right: 1px solid black;
+}
+
+.five img {
+	margin-left: 20px;
+}
+
+.six img {
+	margin-left: 35px;
+}
+
+.article-text {
+	height: 100px;
+	padding-left: 25px;
+	margin-left: 10px;
+	margin-right: 35px;
+	color: gray;
+	font-size: 13px;
+	line-height: 21px;
+}
+
+.tabs img {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.article-title {
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+}
+
+.article-subtitle {
+	font-size: 18px;
+	color: gray;
+}
+
+.main-article-text {
+	text-align: end;
+	margin-right: 30px;
+}
+
+.main-article-text h2 {
+	font-size: 4rem;
+	font-weight: 100;
+	position: relative;
+	bottom: 10px;
+}
+
+.main-article-text h3 {
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: gray;
+	float: right;
+	margin-right: 10px;
+}
+
+.colour-text {
+	color: red;
+}
+
+.main-article-text-button {
+	width: 330px;
+	margin: auto;
+	height: 65px;
+}
+
+.create-buttonn {
+	width: 330px;
+	height: 65px;
+	border-radius: 30px;
+	color: gray;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.create-buttonn:hover {
+	background-color: lightgray;
+}
+
+
+/* midline */
+
+.aricle-two-container {
+	width: 100%;
+	margin-top: 15px;
+	background-image: url(assets/need.png);
+	background-position: 0 220px;
+}
+
+.partners {
+	width: 80%;
+	height: 100px;
+}
+
+.partners img {
+	width: 67%;
+}
+
+
+/*boston-herald*/
+
+.boston-herald {
+	width: 580px;
+	height: 180px;
+	margin-left: 205px;
+	padding: 10px 10px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.boston-herald p {
+	font-size: 1.6rem;
+	text-align: left;
+	font-style: italic;
+	color: rgb(0, 0, 0);
+	padding: 1px;
+	margin-left: 25px;
+}
+
+.fa-circle {
+	color: gray;
+	font-size: 13px;
+	padding-right: 25px;
+	padding-top: 10px;
+	float: left;
+}
+
+.boston-herald small {
+	font-size: 16px;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.fa-circle:hover {
+	font-size: 15px;
+	color: rgb(7, 7, 7);
+}
+
+
+/*boston-herald*/
+
+.laptop-image {
+	height: 720px;
+	background-image: url(assets/laptop.png);
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 720px -10px;
+}
+
+
+/*any-device*/
+
+.any-device {
+	width: 500px;
+	height: 220px;
+	text-align: right;
+	position: relative;
+	left: 355px;
+}
+
+.any-device img {
+	margin: 25px 5px;
+}
+
+.any-device h2 {
+	font-size: 2.5rem;
+	color: rgb(134, 114, 114);
+	font-weight: 200;
+}
+
+.any-device h3 {
+	font-size: 1.2rem;
+	padding-top: 15px;
+	color: rgb(177, 169, 169);
+}
+
+
+/*any-device*/
+
+
+/*privacy*/
+
+.privacy {
+	height: 250px;
+	text-align: center;
+	margin: auto;
+}
+
+.privacy h2 {
+	color: rgb(49, 49, 49);
+	font-weight: 300;
+	font-size: 38px;
+}
+
+.privacy h3 {
+	color: rgb(82, 82, 82);
+	font-weight: 100;
+	font-size: 31px;
+}
+.btn {
+	padding:15px 20px;
+	border-radius: 30px;
+	color: rgb(240,255,240);
+	text-align: center;
+	background-color: rgb(88, 45, 128);
+	box-shadow: -5px 10px 15px #8e7194;
+	cursor: pointer;
+	border: none;
+	margin-right: 20px;
+	outline: none;
+}
+.update {
+	display:inline-block;
+	margin-right: 10px;
+	font-family: 'roberto';
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 35px;
+}
+
+.donate {
+	padding:15px 25px;
+	font-weight: 600;
+	margin-left: 30px;
+	font-size: 18px;
+}
+
+.fa-usd,
+.fa-cloud-upload {
+	color: #fff;
+}
+
+.donate:hover {
+	background-color: rgb(9, 133, 133);
+}
+
+.update:hover {
+	background-color: rgb(11, 9, 133);
+}
+
+.fa-cloud-upload,
+.fa-usd {
+	columns: #fff;
+	padding-right: 10px;
+}
+
+footer {
+	width: 82%;
+	height: 600px;
+	float: left;
+	position: relative;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.partners-image h5 {
+	padding-right: 20px;
+	margin-top: 20px;
+	color: rgb(150, 146, 146);
+	font-size: 13.5px;
+	float: right;
+}
+
+.partners-image img {
+	width: 66.5%;
+	float: right;
+}
+
+.partners-image p {
+	color: #fff;
+}
+
+.common-class {
+	text-align: end;
+	margin-top: 160px;
+	font-size: 22px;
+}
+
+.first {
+	border-right: 1px solid black;
+	height: 300px;
+	padding-right: 25px;
+	position: relative;
+	left: 60px;
+}
+
+.secoend {
+	position: relative;
+	left: 45px;
+}
+
+.third {
+	position: relative;
+	left: 8px;
+}
+
+.grid-example {
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	grid-gap: 90px;
+	width: 660px;
+	float: right;
+}
+
+.common-class h5 {
+	margin-bottom: 20px;
+}
+
+.common-class ul li a {
+	font-size: 17px;
+	text-decoration: none;
+	list-style: none;
+	color: rgb(87, 83, 83);
+}
+
+.common-class ul li a::after {
+	content: '';
+	font-size: 20px;
+}
+
+.common-class ul li a:hover {
+	text-decoration: underline;
+	color: rgb(26, 187, 179);
+}
+
+.common-class ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+/*mails*/
+
+.mails {
+	text-align: start;
+	width: 240px;
+	height: 130px;
+	margin-left: 50px;
+	margin-top: 250px;
+	border-left: 1px solid black;
+	padding-left: 20px;
+}
+
+.mails p {
+	font-size: 14px;
+}
+
+.mails a {
+	color: rgb(41, 37, 37);
+	font-weight: 600;
+	font-style: inherit;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.mails a:hover {
+	color: lightseagreen;
+}
+
+.common-class ul li a::after {
+	content: url(assets/square.png);
+	align-items: center;
+	position: relative;
+	left: 8px;
+	color: gray;
+}
+
+
+/*mails*/
+
+
+/*soc-links*/
+
+.soc-media-chooser li a {
+	padding: -5px;
+	font-size: 11px;
+}
+
+ul.soc-media-chooser {
+	list-style: none;
+	width: 400px;
+	margin-left: 52px;
+}
+
+ul.soc-media-chooser li {
+	display: inline;
+}
+
+ul.soc-media-chooser li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+}
+
+ul.soc-media-chooser li a {
+	color: #636466;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+ul.soc-media-chooser li a:hover {
+	color: lightseagreen;
+	text-decoration: underline;
+}
+
+.social-media h5 {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	font-size: 12px;
+	color: rgb(77, 74, 74);
+}
+
+.social-media {
+	width: 600px;
+	text-align: start;
+	margin-top: 100px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*soc-links*/
+
+
+/* responsive */
+
+@media only screen and (max-width: 1400px) {
+	header {
+		padding: 30px 5%;
+	}
+	.wrapper {
+		max-width: 100%;
+	}
+	.any-device {
+		left: 255px;
+	}
+	.laptop-image {
+		background-position: 630px -10px;
+	}
+	.social-media-icons {
+		margin-top: 40px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.wrapper {
+		max-width: 100%;
+	}
+	.any-device {
+		left: 105px;
+	}
+	.laptop-image {
+		background-position: 480px -10px;
+	}
+	.partners-image img {
+		display: none;
+	}
+	.partners-image h5 {
+		float: left;
+	}
+	.grid-example {
+		position: relative;
+		height: 350px;
+		bottom: 120px;
+		float: left;
+	}
+	.mails {
+		border: none;
+		position: relative;
+		bottom: 80px;
+	}
+	.first {
+		border: none;
+	}
+	footer {
+		width: 100%;
+	}
+	.social-media-icons {
+		margin-top: 30px;
+	}
+	ul.soc-media-chooser {
+		margin-left: 22px;
+	}
+	.menu {
+	
+		position: relative;
+		right: 100px;
+	}
+	.menu li {
+		display:block;
+	}
+	.menu li a {
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.user-login {
+		position: relative;
+		right: 100px;
+	}
+}
+
+@media only screen and (max-width: 1060px) {
+	header {
+		padding: 30px 5%;
+	}
+	.wrapper {
+		max-width: 100%;
+	}
+	.any-device {
+		left: 150px;
+	}
+	.laptop-image {
+		background-image: none;
+	}
+	footer {
+		border-right: none;
+	}
+	.first {
+		border-right: none;
+	}
+	.ul.soc-media-chooser {
+		padding-top: 100px;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.social-media-icons {
+		margin-top: 20px;
+	}
+	ul.soc-media-chooser {
+		margin-left: 12px;
+		margin-top: 50px;
+	}
+	.main {
+		padding-top: 10px;
+	}
+	.txt {
+		margin-left: 1px;
+	}
+	.onw,
+	.two,
+	.thre {
+		height: 10px;
+	}
+	.six img {
+		margin-left: 0px;
+	}
+	.five img {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 940px) {
+	.wrapper {
+		max-width: 100%;
+	}
+	.lang ul li a {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	ul.lang-chooser li+li:before {
+		content: none;
+	}
+	.main-article-text-button {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.boston-herald {
+		margin-left: 90px;
+	}
+	.social-media-icons {
+		margin-top: 20px;
+	}
+	.privacy {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.main {
+		padding-top: 10px;
+	}
+	.six img {
+		margin-left: 0px;
+	}
+	.five img {
+		margin-left: 0px;
+	}
+	.five,
+	.eight,
+	.ten,
+	.one,
+	.four {
+		border-right: none;
+	}
+	.article-title {
+		font-size: 20px;
+	}
+	.main-article-text-button {
+		width: 400px;
+	}
+	.main-article-text h1 {
+		font-size: 35px;
+	}
+	.main-article-text h3 {
+		font-size: 21px;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.wrapper {
+		max-width: 100%;
+	}
+	.main-article-text-button {
+		width: 450px;
+	}
+	.boston-herald {
+		margin-left: 50px;
+	}
+	.any-device {
+		left: 50px;
+	}
+	.ten {}
+}
